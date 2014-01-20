@@ -1,4 +1,5 @@
 import "sql.pp"
+import "openerp_depend_lib"
 
 class core {
   
@@ -309,3 +310,4 @@ include sql
 #include mongodb
 #include elasticsearch
 #include flask
+include openerp
