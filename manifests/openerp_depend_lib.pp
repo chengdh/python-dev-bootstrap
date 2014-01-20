@@ -1,7 +1,7 @@
 class openerp {
     exec {
       "pychart":
-      command => "/usr/bin/sudo pip install pychart",
+      command => "/usr/bin/sudo pip install http://download.gna.org/pychart/PyChart-1.39.tar.gz",
       require => Package["python-dev", "python-pip"]
     }
  
