@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 8700, host: 8700
   config.vm.network :forwarded_port, guest: 5432, host: 5432
   #将ssh端口映射到2222
-  config.vm.network :forwarded_port, guest: 22, host: 2222 
+  config.vm.network :forwarded_port, guest: 22, host:  3333
 
   config.vm.provider :lxc do |lxc|
     # Don't boot with headless mode
