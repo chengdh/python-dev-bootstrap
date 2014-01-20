@@ -299,15 +299,13 @@ include core
 include python
 include pythondev
 include networking
-include gui
-include keepuptodate
+#include gui
+#include keepuptodate
 
 #include science
 #include web
 #include pythononwheels
-#include sql
+include sql
 #include mongodb
 #include elasticsearch
 #include flask
-
-
