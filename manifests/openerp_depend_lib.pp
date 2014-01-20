@@ -144,19 +144,3 @@ class openerp {
       require => Package["python-dev", "python-pip"]
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
