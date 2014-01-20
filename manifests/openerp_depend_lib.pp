@@ -1,6 +1,6 @@
 class openerp {
     package { 
-      ["libxml2","libxml2-dev","libxslt1-dev","postgresql-server-dev-all","libldap2-dev"]:
+      ["libxml2","libxml2-dev","libxslt1-dev","postgresql-server-dev-all","libldap2-dev","libsasl2-dev","libssl-dev"]:
         ensure => ["installed"],
         require => Exec['apt-update']    
     }
