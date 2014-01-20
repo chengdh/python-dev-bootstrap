@@ -1,4 +1,4 @@
-Vagrant::Config.run do |config|
+Vagrant.configure("2") do |config|
   config.vm.box = "openerp-dev-box"
   config.vm.box_url = "http://bit.ly/vagrant-lxc-precise64-2013-10-23"
   config.vm.hostname = "openerp-dev-box"
