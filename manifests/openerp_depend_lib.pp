@@ -1,11 +1,4 @@
 class openerp {
-    package {
-        [ "dpkg-dev", "swig", "python2.7-dev", "libwebkitgtk-dev", "libjpeg-dev", "libtiff4-dev",
-        "checkinstall", "ubuntu-restricted-extras", "freeglut3", "freeglut3-dev", "libgtk2.0-dev", "libsdl1.2-dev",
-        "libgstreamer-plugins-base0.10-dev", "libwxgtk2.8-dev" ]:
-        ensure => ["installed"],
-        require => Exec['apt-update']    
-    }
     exec {
       "pychart":
       command => "/usr/bin/sudo pip install pychart",
