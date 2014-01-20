@@ -1,4 +1,11 @@
 class openerp {
+    package { 
+      ["libxml2","libxml2-dev" "libxslt2","libxslt2-dev"]:
+        ensure => ["installed"],
+        require => Exec['apt-update']    
+    }
+
+
     exec {
       "pychart":
       command => "/usr/bin/sudo pip install http://download.gna.org/pychart/PyChart-1.39.tar.gz",
