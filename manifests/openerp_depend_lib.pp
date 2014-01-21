@@ -13,7 +13,7 @@ class openerp {
     }
     exec {
       "babel":
-      command => "/usr/bin/sudo pip babel",
+      command => "/usr/bin/sudo pip install babel",
       require => Package["python-dev", "python-pip"]
     }
  
