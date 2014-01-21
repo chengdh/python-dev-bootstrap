@@ -1,6 +1,6 @@
 class openerp {
     package { 
-      ["libxml2","libxml2-dev","libxslt1-dev","postgresql-server-dev-all","libldap2-dev","libsasl2-dev","libssl-dev"]:
+      ["libxml2","libxml2-dev","libxslt1-dev","postgresql-server-dev-all","libldap2-dev","libsasl2-dev","libssl-dev","python-lxml"]:
         ensure => ["installed"],
         require => Exec['apt-update']    
     }
@@ -36,12 +36,6 @@ class openerp {
     exec {
       "Jinja2":
       command => "/usr/bin/sudo pip install Jinja2",
-      require => Package["python-dev", "python-pip"]
-    }
-
-    exec {
-      "lxml":
-      command => "/usr/bin/sudo pip install lxml",
       require => Package["python-dev", "python-pip"]
     }
 
